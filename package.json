@@ -2,9 +2,8 @@
   "name": "insta-clone",
   "version": "1.0.0",
   "description": "Fazliddin is doing great!",
-  "main": "./backend/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./backend/app.js"
   },
   "repository": {
     "type": "git",
