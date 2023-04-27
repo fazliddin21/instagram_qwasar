@@ -1,0 +1,24 @@
+{
+  "name": "insta-clone",
+  "version": "1.0.0",
+  "description": "Fazliddin is doing great!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazliddin21/instagram_qwasar.git"
+  },
+  "keywords": [
+    "instagram_clone",
+    "clone",
+    "react"
+  ],
+  "author": "Fazliddin Abdugaffarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fazliddin21/instagram_qwasar/issues"
+  },
+  "homepage": "https://github.com/fazliddin21/instagram_qwasar#readme"
+}
