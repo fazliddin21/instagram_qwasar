@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fazliddin is doing great!",
   "scripts": {
-    "start": "node ./backend/app.js"
+    "start": "npm install --prefix frontend && npm run build --prefix frontend && node ./backend/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/fazliddin21/instagram_qwasar/issues"
   },
-  "homepage": "https://github.com/fazliddin21/instagram_qwasar#readme"
+  "homepage": "https://github.com/fazliddin21/instagram_qwasar#readme",
+  "main": "index.js"
 }
