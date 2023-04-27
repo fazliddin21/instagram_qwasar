@@ -14,7 +14,7 @@ export default function Home() {
     const token = localStorage.getItem("jwt");
     if (!token) navigate("./Registration");
 
-    fetch("/allposts", {
+    fetch("https://inst-back-production.up.railway.app/allposts", {
       headers: { Authorization: "Bearer " + token },
     })
       .then((res) => res.json())
@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   const handlePost = (method, id) => {
-    fetch(`/${method}`, {
+    fetch(`https://inst-back-production.up.railway.app/${method}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export default function Home() {
   const unlikePost = (id) => handlePost("unlike", id);
 
   const makeComment = (text, id) => {
-    fetch("/comment", {
+    fetch("https://inst-back-production.up.railway.app/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

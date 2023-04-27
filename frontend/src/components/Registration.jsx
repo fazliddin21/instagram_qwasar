@@ -17,7 +17,7 @@ export default function Registration() {
       notify("Invalid email", true);
       return;
     }
-    fetch("/Registration", {
+    fetch("https://inst-back-production.up.railway.app/registration/", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, userName, email, password }),

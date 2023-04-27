@@ -20,7 +20,7 @@ export default function ProfilePic({ changeProfile }) {
 
   const postPic = async () => {
     try {
-      const response = await fetch("/uploadProfilePic", {
+      const response = await fetch("https://inst-back-production.up.railway.app/uploadProfilePic", {
         method: "put",
         headers: {
           "Content-Type": "application/json",

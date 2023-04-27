@@ -9,7 +9,7 @@ export default function UserProfil() {
   const [posts, setPosts] = useState([]);
 
   const userFollow = (follow) => {
-    fetch(`/${follow}`, {
+    fetch(`https://inst-back-production.up.railway.app/${follow}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ export default function UserProfil() {
   };
 
   const userUnfollow = (unfollow) => {
-    fetch(`/${unfollow}`, {
+    fetch(`https://inst-back-production.up.railway.app/${unfollow}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export default function UserProfil() {
   };
 
   useEffect(() => {
-    fetch(`/user/${userid}`, {
+    fetch(`https://inst-back-production.up.railway.app/user/${userid}`, {
       headers: { Authorization: "Bearer " + localStorage.getItem("jwt") },
     })
       .then((res) => res.json())

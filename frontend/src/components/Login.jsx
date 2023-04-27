@@ -30,7 +30,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateEmail(email)) {
-      fetch("/login", {
+      fetch("https://inst-back-production.up.railway.app/login", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

@@ -14,7 +14,7 @@ export default function FollowingPost() {
     const token = localStorage.getItem("jwt");
     if (!token) navigate("./Registration");
 
-    fetch("/myfollwingpost", {
+    fetch("https://inst-back-production.up.railway.app/myfollwingpost", {
       headers: { Authorization: "Bearer " + token },
     })
       .then((res) => res.json())
@@ -29,7 +29,7 @@ export default function FollowingPost() {
   };
 
   const handlePost = (method, id) => {
-    fetch(`/${method}`, {
+    fetch(`https://inst-back-production.up.railway.app/${method}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export default function FollowingPost() {
   const unlikePost = (id) => handlePost("unlike", id);
 
   const makeComment = (text, id) => {
-    fetch("/comment", {
+    fetch("https://inst-back-production.up.railway.app/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
